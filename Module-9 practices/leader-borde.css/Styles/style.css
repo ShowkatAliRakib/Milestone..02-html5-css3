@@ -1,0 +1,32 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+/* common font style */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #F3F1FF;
+}
+
+.container {
+    background-color: #ffff;
+}
+
+
+/* Top players style */
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}

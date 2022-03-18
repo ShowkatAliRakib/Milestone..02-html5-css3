@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        @keyframes sliding {
+            0% {
+                background: rgb(236, 99, 8);
+                left: 0;
+                top: 0;
+            }
+            25% {
+                top: 240px;
+                background: rgb(16, 13, 238);
+                transform: scale(0.5);
+            }
+            50% {
+                top: 0px;
+                background: rgb(245, 142, 8);
+            }
+            75% {
+                top: 240px;
+                background: rgb(130, 201, 223);
+                transform: scale(0.5);
+            }
+            100% {
+                background: rgb(28, 224, 38);
+                left: 700px;
+                top: 0px;
+            }
+        }
+        
+        .stage {
+            width: 800px;
+            height: 300px;
+            background: rgb(8, 198, 223);
+        }
+        
+        .ball {
+            width: 80px;
+            height: 80px;
+            background: rgb(247, 5, 5);
+            border-radius: 50%;
+            position: relative;
+            animation: sliding 3s ease-in-out 0.4s infinite alternate;
+            animation-play-state: running;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lest explor animation</h1>
+
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+
+</body>
+
+</html>
